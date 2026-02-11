@@ -10,7 +10,7 @@ Pretty much implements [this tweet](https://x.com/0xdjma/status/2020377562267152
 
 Other things I tried:
 1. Create blocks (pairs of input/output pieces) by by minimizing RMSE. Finds ~60% of the correct blocks but requires finer-grained search in step (4) above since you also need to search the blocks.
-1. Greedy search, etiher front-to-back or back-to-front.
+1. Greedy search, etiher front-to-back or back-to-front. Does not work.
 1. Huge, parallel search. This is also what gpt-5.3-codex-medium will try to do if you just give it the problem description. This probably works but felt too brute force. 
 1. Looking at weight and activation statistics, norms, etc. There was not much correlation and mostly didn't work.
 
